@@ -26,9 +26,9 @@ To be able to run and debug JavaScript SDK (Controls) on your local machine, Web
 #Important Framework Files 
 
 - Package.json: Package.json file have all the dev dependancies and required plugins names along with version fields.
-- Gulp.js -  Gulp is the main build and deploy process file which help to run all the other plugins.
-- Webpack.config.js  - To create single bundles (JS,HTML,CSS,TAG) which will use to implement simple/complex controls on different project.
-- Karma.conf.js - Karma is test runner to run unit test cases and code coverage reports using isparta.We are using jasmine to write the unit test cases.
+- Gulp.js -  Gulp is the main build and deploy process file which help to run other plugins e.g. watch.
+- Webpack.config.js  - To create bundles (JS,HTML,CSS,TAG etc) which will use to implement simple/complex controls on different project.
+- Karma.conf.js - Karma is test runner framework to run jasmine written unit test cases and code coverage reports using isparta. We are using jasmine to write the unit test cases.
 - Phantomcss.conf.js - Phantomcss helps to test functional/UI test cases. It internally use phantomJS, ResembleJS and casperjs to capture screenshot and compare it.
 - CasperJS.bat - Configure phantomJS and slimmerJS(If required)
 - Protractor.conf.js - To test complex and angular controls.
@@ -38,7 +38,7 @@ To be able to run and debug JavaScript SDK (Controls) on your local machine, Web
 
 Note: Please feel free to add/update more plugins if it helps to improve build process.
  
-Please follow the below steps to setup.
+Please follow the below steps to setup on your local machine.
 
 #Step 1: Download and install Node.js
  - Please use this link to install <a href="https://nodejs.org/">NodeJS</a> on your local machine. We need node to use npm to get all the dependent plugins e.g. Gulp, Karma etc.
@@ -70,7 +70,8 @@ Please follow the below steps to setup.
 Note: NPM is required. cd to the root project directory and run. It will install all the required plugin mentioned in package.json.
 
  <br/>
-### Installation - Use NPM
+<b>Installation - Use NPM</b>
+
 ```sh
 $ npm install
 ```
@@ -82,9 +83,12 @@ $ npm install
 	<img src="https://github.com/adars99/Controls_Setup/blob/master/images/Capture8.PNG"><br/>
 	
 Note: We can also use command prompt/visual studio task manager to run gulp. We prefer to use single IDE to do everything.
+<br/>
 
- 	### Run gulp on command prompt - Use NPM
+<b>Run gulp on command prompt - Use NPM</b>
+ 	
 ```sh
+
 $ gulp
 ```
 
